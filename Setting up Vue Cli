@@ -1,0 +1,34 @@
+You install vue cli with this tutorial here: https://github.com/BYU-CS-260/learning-vue-cli/blob/master/tutorials/lesson1.md
+
+To create a new vue project just do: $ vue create whatever.
+
+Make sure that you include a router. The presets are listed on that linked tutorial above ^
+
+---------------------------------------------------------
+Understanding what you just made
+
+src/router/index.js - this important document routs your url traffic. When you create a new vue, update it here.
+
+---------------------------------------------------------
+The vues in the views folder. -> https://github.com/BYU-CS-260/learning-vue-cli/blob/master/tutorials/lesson2.md
+
+Its pretty intuitive except for the script part.
+
+If you use any components, you need to import them here and list them in the components section. You can use a compentent by putting it
+in its own little bracket. <MyComponent msg="whatever"> // the msg lets you pass data across.
+
+a component is like a vue, its data, props, is set by the message sent through the bracket.
+
+also, the style in components is scoped so it doesn't screw with your other bits. 
+
+the menu is src/App.vue. seems pretty intuitive. 
+
+main.js is the js for the whole program. if you're not going to use a database, you can store global variables here. 
+
+gives good detail -> https://github.com/BYU-CS-260/learning-vue-cli/blob/master/tutorials/lesson3.md
+
+data can be accessed with 'this.$root.$data' this is the magic way to access all of your global variables
+
+
+
+
